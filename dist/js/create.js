@@ -79,7 +79,7 @@ if (formPost != null){
        .then((data) => {
         console.log('Success:', data);
         alert("Resource crée avec success");
-        windows.location.href = "foods.html"
+        window.location.href = "foods.html"
     })
     .catch((error) => {
         console.error('Error:', error);
