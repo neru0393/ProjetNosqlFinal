@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <meta name="robots" content="noindex,nofollow">
+    <title>Creation</title>
+    
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.png">
+    <!-- Custom CSS -->
+    <link href="dist/css/style.min.css" rel="stylesheet">
+    
+<style>
+    .rounded {
+        border-radius: 5px !important;
+    }
+    .text-bold{
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+    
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    
+    
+    <div id="main-wrapper ">
+        
+        <div class="mx-4">
+
+            <div class="container mt-4 bg-primary rounded">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <h1 class="mb-0 pt-2 fw-bold  text-white">Ajouter de données</h1> <br>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-end upgrade-btn">
+                            <a href="index.html" class="btn btn-light text-dark"
+                                target="_blank">Acceuil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="page-wrapper">
+                
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-md-12 mx-auto">
+                                    <form id="form-dish">
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <label for="inputFirstname">Date</label>
+                                                <input type="text" class="form-control" id="timestamp" placeholder="Date" name="timestamp">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label for="inputLastname">Age</label>
+                                                <input type="text" class="form-control" id="age" placeholder="Age" name="age">
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <label for="inputAddressLine1">Copilot user</label>
+                                                <input type="text" class="form-control" id="copilot_user" placeholder="Name" name="copilot_user">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label for="inputLastname">City</label>
+                                                <input type="text" class="form-control" id="city" placeholder="City" name="city">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <label for="inputAddressLine1">Gender</label>
+                                                <input type="text" class="form-control" id="gender" placeholder="Gender" name="gender">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label for="inputAddressLine2">Salary</label>
+                                                <input type="text" class="form-control" id="salary" placeholder="Salary" name="salary">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <label for="inputCity">BMI</label>
+                                                <input type="text" class="form-control" id="bmi" placeholder="BMI" name="bmi">
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <label for="inputState">Weight</label>
+                                                <input type="text" class="form-control" id="weight" placeholder="Weight" name="weight">
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <label for="inputPostalCode">Height</label>
+                                                <input type="text" class="form-control" id="height" placeholder="Height" name="height">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <label for="inputContactNumber">Qualification</label>
+                                                <input type="text" class="form-control" id="qualification" placeholder="Qualification" name="qualification">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label for="inputWebsite">Employment status</label>
+                                                <input type="text" class="form-control" id="employment_status" placeholder="Employment status" name="employment_status">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <label for="inputAddressLine1 text-bold">Covid 19</label>
+                                                <input type="text" class="form-control" id="covid_vaccine" placeholder="Covid 19" name="covid_vaccine">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label for="inputAddressLine2">Marital status</label>
+                                                <input type="text" class="form-control" id="marital_status" placeholder="Marital status" name="marital_status">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <label for="inputAddressLine1">Favourite dish</label>
+                                                <input type="text" class="form-control" id="favourite_dish" placeholder="Favourite dish" name="favourite_dish">
+                                            </div>
+                                        </div>
+                                        <button id= "btnsave" type="submit" class="btn btn-primary px-4 float-right">Sauvegarder</button>
+                                    </form>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <br><br><br><br>
+                <footer class="footer text-center">
+                    Designed and Developed by <span class="font-16 font-bold">Eunicia Neruda D</span>
+                </footer>
+                <br><br><br><br>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Methods connexion with API -->
+    <script src="./dist/js/create.js"></script>
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="./dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="./dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="./dist/js/custom.js"></script>
+</body>
+
+</html>
