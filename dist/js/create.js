@@ -1,3 +1,5 @@
+const API_BASE_ENDPOINT = "https://neru-rest-food-api.deta.dev/"
+
 // Traitement des formualaire
 /// Publication des données
 let formPost = document.getElementById("form-dish");
@@ -49,7 +51,7 @@ if (formPost != null){
         }
   
         // appeler à la fonction postData
-        postData('http://localhost:3000/api/foods', data)
+        postData(`${API_BASE_ENDPOINT}/api/foods`, data)
     }
   })
 }

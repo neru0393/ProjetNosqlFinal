@@ -1,3 +1,4 @@
+const API_BASE_ENDPOINT = "https://neru-rest-food-api.deta.dev/"
 /**
  * Cette fonction lance le programme
  */
@@ -44,7 +45,7 @@ function loadDataToTable(data) {
 async function fetchData() {
   console.log("call fetchData");
   // call fetch data
-  const rep = await fetch('http://localhost:3000/api/foods/women/foods', { method: 'GET' })
+  const rep = await fetch(`${API_BASE_ENDPOINT}/api/foods/women/foods`, { method: 'GET' })
   .then((rep) => rep.json())
   .then((data) => {
     console.log('Success:', data);
