@@ -1,4 +1,4 @@
-const API_BASE_ENDPOINT = "https://neru-rest-food-api.deta.dev"
+const API_BASE_ENDPOINT = "https://neru-rest-food-api.deta.dev/api"
 
 // Traitement des formualaire
 /// Publication des données
@@ -51,7 +51,7 @@ if (formPost != null){
         }
   
         // appeler à la fonction postData
-        postData(`${API_BASE_ENDPOINT}/api/foods`, data)
+        postData(`${API_BASE_ENDPOINT}/foods`, data)
     }
   })
 }
