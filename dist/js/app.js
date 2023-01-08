@@ -1,4 +1,4 @@
-const API_BASE_ENDPOINT = "https://neru-rest-food-api.deta.dev/"
+const API_BASE_ENDPOINT = "https://neru-rest-food-api.deta.dev"
 /**
  * Cette fonction lance le programme
  */
